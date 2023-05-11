@@ -7,3 +7,8 @@
 * cargar la data de prueba: `docker-compose exec site /var/www/app/artisan db:seed`
 * ingresar a la página: `http://site-tiendatax.local.tax.com/products/34c4c97e-38bd-4b62-91de-89150b32fcee` Allí ya debería verse el producto y encargarlo.
 * si el producto se agrega Ok, esto genera una tarea para el sistema queues. Se puede finalizar su ejecución mediante `exec site /var/www/app/artisan queue:work` (es un sistema mejorable con la implementación de supervisord o similar).
+
+Algunos mejorables:
+
+* Implementación de "Services" o UseCases para quitar responsabilidades al controller
+* Tests al menos de aceptación

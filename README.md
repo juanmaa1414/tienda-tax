@@ -12,3 +12,4 @@ Algunos mejorables:
 
 * Implementación de "Services" o UseCases para quitar responsabilidades al controller
 * Tests al menos de aceptación
+* Imple de validaciones con las opciones que Laravel ofrece

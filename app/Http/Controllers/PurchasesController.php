@@ -52,7 +52,7 @@ class PurchasesController extends Controller
             response()->json(['messageKey' => 'unknown_error'], 400);
         }
         
-        //dispatch(new SendProductAddedEmailJob($product->name, $cart->customer_email));
+        dispatch(new SendProductAddedEmailJob($product->name, $cart->customer_email));
         
         return new JsonResponse([], 201);
     }

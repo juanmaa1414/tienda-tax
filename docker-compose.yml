@@ -31,7 +31,7 @@ services:
       - "traefik.http.routers.api.rule=Host(`site-tiendatax.local.tax.com`)"
       - "traefik.http.services.api.loadbalancer.server.port=8080"
     volumes:
-      - .:/var/www/api
+      - .:/var/www/app
 
   traefik:
     image: traefik:v2.3

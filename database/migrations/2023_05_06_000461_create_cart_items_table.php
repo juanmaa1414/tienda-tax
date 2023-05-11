@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('cart_items', function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->uuid('cart_id')->nullable(false);
+            $table->uuid('product_id')->nullable(false);
             $table->foreign('cart_id')
                 ->on('carts')
                 ->references('id')

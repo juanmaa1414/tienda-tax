@@ -11,11 +11,7 @@ class CartItem extends Model
     public $incrementing = false;
     public $timestamps = false;
     
-    public function post(): BelongsTo {
-        return $this->belongsTo(Post::class);
-    }
-    
     public function product(): BelongsTo {
-        return $this->belongsTo(Post::class);
+        return $this->belongsTo(Product::class);
     }
 }

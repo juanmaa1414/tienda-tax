@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Mochila Gris Rockstore Norte',
             'img' => 'https://static.dafiti.com.ar/p/rockstore-2219-1277221-1-zoom.jpg',
             'unit_price' => 15600,
+            'created_at' => date("Y-m-d H:i:s"),
         ]);
     }
 }

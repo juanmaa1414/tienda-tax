@@ -18,5 +18,6 @@ class Product extends Model
         'name',
         'img',
         'unit_price',
+        'created_at'
     ];
 }
